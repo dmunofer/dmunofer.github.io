@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Noticias de Fórmula 1</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <header>
+        <img src="data:image/png;base64,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" alt="Logo Fórmula 1">
+            <h1 class="titulo">Noticias F1</h1>
+        <nav>
+        <ul>
+            <li><a href="pagina2.html">Aston Martin</a></li>
+            <li><a href="pagina1.html">Red Bull Racing</a></li>
+            <li><a href="pagina3.html">Regístrate Aquí</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+        <img class="imagenprinc" src="https://estaticos-cdn.sport.es/clip/dc932d2a-310f-46ce-8131-23239324bea8_source-aspect-ratio_default_0.jpg" alt="Foto grande de Fórmula 1">
+        <p>El Circuito de Albert Park, también llamado Circuito de Melbourne, es un circuito urbano de carreras que se monta en los alrededores del lago Albert Park, al sur de la ciudad de Melbourne, Australia. Alberga anualmente desde 1996 el Gran Premio de Australia de Fórmula 1 y una fecha no puntuable de V8 Supercars.
+            A pesar de ser un trazado urbano (o semiurbano, ya que muchas de las calles han sido remodeladas con el Gran Premio en mente), la pista es relativamente ancha y rápida. El circuito es bastante liso en comparación con otras pistas de la máxima categoría.
+            A pesar de la popularidad del evento, muchos habitantes locales tienen sus reparos respecto al mismo debido al movimiento generado, al ruido y al dinero invertido que, afirman, bien podría usarse para construir un circuito permanente alejado de las zonas residenciales. Esto provoca varias manifestaciones contrarias a la realización de la carrera cada año con motivo del Gran Premio.</p>
+        </article>
+        <section>
+        <div class="imagen1">
+            <img src="https://soymotor.com/sites/default/files/styles/watermark_wide_960/public/2023-03/sainz-yeda-soymotor_0.jpg.webp?itok=1FlDyDS8" alt="Carlos Sainz">
+            <p>Los resultados pobres que ha cosechado Ferrari en el inicio de temporada han hecho saltar muchas alarmas sobre la situación en Maranello, pero Carlos Sainz señala que todos los rumores de crisis sólo tratan de "desestabilizar" a la Scuderia. Además, el piloto madrileño asegura que conocen sus problema y confía en el trabajo del equipo para darle solución problema. 
+                Tras las dos primeras carreras el rendimiento del SF-23 no ha sido el esperado, lo que sumado a los rumores de posibles salidas de Maranello han hecho que los rumores sobre una crisis en la marca italiana estén a la orden del día. Pero desde Ferrari piden calma y el jefe de equipo, Frédéric Vasseur, asegura que "no todo va mal" en la Scuderia, lo que comparte Carlos Sainz. </p>
+        </div>
+        <div class="imagen2">
+            <img src="https://www.f1aldia.com/images/articulos/44000/44717-n1.jpg" alt="Piastri">
+            <p>El comienzo de la temporada 2023 de Fórmula 1 nos ha brindado un auténtico cara y cruz entre los equipos. En el lado de la cara tenemos a Aston Martin, peleando por el Top 3 en este momento y con dos podios ya en su haber; en la cruz, por contra, se encuentra McLaren. Los hombres de papaya aún no han sumado ningún punto en esta campaña y parecen estar replicando lo ocurrido con los de Silverstone en 2022, cuando incluso se marcharon de Melbourne como últimos en la General. Es por ello que Oscar Piastri ha querido ejemplificar a la escudería de Woking con su rival, y es que ese es precisamente el camino a seguir para salir del pozo y volver, como mínimo, a la batalla por el liderazgo de la zona media de la parrilla.</p>
+        </div>
+        <div class="imagen3">
+            <img src="https://phantom-marca-mx.unidadeditorial.es/c96370c141ce24c1203d3b0f285f2bfa/resize/660/f/webp/mx/assets/multimedia/imagenes/2023/03/29/16800427674713.jpg" alt="Pérez">
+            <p>Este fin de semana, la Fórmula 1 viaja a Australia para celebrar el tercer Gran Premio de la temporada 2023. Tesitura que el equipo Red Bull ha aprovechado para calentar motores en las áridas tierras que pueblan gran parte del país.Lorenzo suelta la bomba en MARCA: "Quiero correr en Le Mans"
+Marca
+Telemetría de Checo Pérez exhibe la falsa postura de Red Bull por la vuelta rápida en Arabia
+Marca
+La marca ha puesto su monoplaza a rodar por senderos y carreteras más preparadas para sus coches y motos de rally, que también hacen aparición en el vídeo. Las imágenes que deja el 'spot' son impresionantes y recuerdan a las que el equipo ya utilizó en la presentación de su modelo para esta temporada.
+Red Bull llega a Australia con sus dos pilotos como primeros clasificados, y parece que sólo Checo Pérez y Max Verstappen pueden disputar este mundial. En Arabia Saudí, ambos pilotos reavivaron los roces que protagonizaron a finales del curso pasado en una encarnizada lucha por la vuelta rápida que terminó llevándose el neerlandés para liderar el campeonato.
+            </p>
+        </div>
+        <div class="imagen4">
+            <img src="https://phantom-marca.unidadeditorial.es/6086dd13f69090683b82ae5615b68062/resize/660/f/webp/assets/multimedia/imagenes/2023/03/25/16797607341298.jpg">
+            <p>En una entrevista en Brasil, que tuvo lugar en noviembre de 2021, pero que no salió a la luz hasta antes del GP de Gran Bretaña de 2022, en el mes de julio, Hamilton se refería en estos términos al heptacampeón:
+                "¿Lo sucedido en Silverstone 2021? El negrito (negrinho en portugués) colocó el coche y se fue. Senna no hizo eso. Senna siguió recto. ¿Crees de verdad que no iba a girar? Iba en plan: 'Lo haré aquí de todos modos'. El negrito metió el coche y se fue porque no había forma de que pasasen dos coches por esa curva. Jugó sucio. Tuvo suerte de que sólo el otro piloto (Verstappen) resultara jodido",
+                Fue su resumen sobre el accidente de un año antes en Silverstone, en el que Lewis fue encontrado culpable por los comisarios y recibió 10 segundos de penalización,aunque no impidió que ganase la carrera, mientras Max acabó ingresado en el hospital</p>
+        </div>
+        </section>
+    </main>
+    <div>
+        <h2>Clasificación Mundial Pilotos</h2>
+        <table id="tablapilotos">
+            <thead>
+                <tr>
+                <th>Posición</th>
+                <th>Nombre</th>
+                <th>Equipo</th>
+                <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>Max Verstappen</td>
+                <td>Red Bull Racing Honda</td>
+                <td>44</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Sergio Pérez</td>
+                <td>Red Bull Racing Honda</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>Fernando Alonso</td>
+                <td>Aston Martin</td>
+                <td>30</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td>Carlos Sainz</td>
+                <td>Ferrari</td>
+                <td>20</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td>Lewis Hamilton</td>
+                <td>Mercedes</td>
+                <td>20</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                <td>George Russel</td>
+                <td>Mercedes</td>
+                <td>18</td>
+                </tr>
+                <tr>
+                <td>7</td>
+                <td>Lance Stroll</td>
+                <td>Aston Martin</td>
+                <td>8</td>
+                </tr>
+                <tr>
+                <td>8</td>
+                <td>Charles Leclerc</td>
+                <td>Ferrari</td>
+                <td>6</td>
+                </tr>
+                <tr>
+                <td>9</td>
+                <td>Valtteri Bottas</td>
+                <td>Alfa Romeo</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>10</td>
+                <td>Esteban Ocon</td>
+                <td>Alpine Renault</td>
+                <td>4</td>
+                </tr>
+            </tbody>
+    </table>
+    </div>
+    <div>
+        <h2>Clasificación Mundial Constructores</h2>
+        <table id="tablaequipos">
+            <thead>
+                <tr>
+                <th>Posición</th>
+                <th>Equipo</th>
+                <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>Red Bull Racing Honda</td>
+                <td>87</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Mercedes</td>
+                <td>38</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>Aston Martin</td>
+                <td>38</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                <td>Ferrari</td>
+                <td>26</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <td>Alpine Renault</td>
+                <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+    <footer>
+        <img src="data:image/png;base64,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">
+        <nav>
+        <ul>
+            <li><a href="pagina2.html">Aston Martin</a></li>
+            <li><a href="pagina1.html">Red Bull Racing</a></li>
+            <li><a href="pagina3.html">Regístrate Aquí</a></li>
+        </ul>
+        </nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERxdeEYhyctSYgnHk4RpcHcMKs_l2wCwZhWNjrMKbAQ4FErNJCwKz8XizrDDpBB-wn1Y&usqp=CAU" alt="NF1">
+    </footer>
+    </body>
+    </html>
