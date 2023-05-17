@@ -186,6 +186,11 @@ footer img {
     font-size: 22px;
 }
 
+#audio-container {
+    position: relative;
+    top: 36px;
+}
+
 @media(min-width: 601px){
     header {
         padding: 1px 58px;
@@ -216,7 +221,7 @@ footer img {
 
     article img {
         left: 100px;
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
     }
 
