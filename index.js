@@ -1,5 +1,5 @@
-var carouselImages = document.querySelectorAll(".carousel-img");
-var textoElement = document.getElementById("texto");
+var carouselItems = document.querySelectorAll(".carousel-item");
+var textElement = document.getElementById("textElement");
 
 var texts = [
     "El Autodromo Enzo e Dino Ferrari es un autódromo de 4,9 km situado en Imola, región de Emilia-Romaña, Italia, unos 30 km al sureste de la ciudad de Bolonia. Es uno de los principales de su país, habiendo albergado carreras de numerosos campeonatos mundiales y europeos de automovilismo de velocidad y motociclismo de velocidad además de italianos. El circuito llevaba originalmente el nombre de Autodromo di Castellaccio.1​ Luego se llamó Autodromo Dino Ferrari en honor a Dino Ferrari, hijo de Enzo Ferrari que falleció en 1956 a los 24 años. Cuando Enzo murió en 1988, el nombre pasó a ser el actual.​",
@@ -10,37 +10,37 @@ var texts = [
 
 var currentIndex = 0;
 
-function showImage(index) {
-    for (var i = 0; i < carouselImages.length; i++) {
-    carouselImages[i].style.display = "none";
+function showSlide(index) {
+    for (var i = 0; i < carouselItems.length; i++) {
+    carouselItems[i].style.display = "none";
 }
-    carouselImages[index].style.display = "block";
+    carouselItems[index].style.display = "block";
 }
 
 function showText(index) {
-    textoElement.textContent = texts[index];
+    textElement.textContent = texts[index];
 }
 
-function nextImage() {
+function nextSlide() {
     currentIndex++;
-    if (currentIndex >= carouselImages.length) {
+    if (currentIndex >= carouselItems.length) {
     currentIndex = 0;
 }
-    showImage(currentIndex);
+    showSlide(currentIndex);
     showText(currentIndex);
 }
 
-function previousImage() {
+function previousSlide() {
     currentIndex--;
     if (currentIndex < 0) {
-    currentIndex = carouselImages.length - 1;
+    currentIndex = carouselItems.length - 1;
 }
-    showImage(currentIndex);
+    showSlide(currentIndex);
     showText(currentIndex);
 }
 
-document.getElementById("nextButton").addEventListener("click", nextImage);
-document.getElementById("prevButton").addEventListener("click", previousImage);
+document.getElementById("nextButton").addEventListener("click", nextSlide);
+document.getElementById("prevButton").addEventListener("click", previousSlide);
 
-showImage(currentIndex);
+showSlide(currentIndex);
 showText(currentIndex);

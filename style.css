@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #ec0303;
-    padding: 15px;
+    padding: 12px;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 nav ul {
@@ -48,7 +48,10 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
 
 nav li {
     margin: 0 5px;
@@ -141,27 +144,27 @@ footer {
 }
 
 footer img {
-    width: 40%;
-    max-width: 90px;
+    width: 10%;
+
 }
 
-footer nav {
+.footer nav {
     display: flex;
     justify-content: center;
 }
 
-footer nav ul {
+.footer nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-footer nav li {
+.footer nav li {
     margin: 0 10px;
 }
 
-footer nav a {
+.footer nav a {
     color: #fff;
     text-decoration: none;
     font-size: 12px;
@@ -171,9 +174,21 @@ footer nav a {
     display: none;
 }
 
-@media(min-width: 800px){
+.carousel-text {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.footer12 nav a {
+    color: #ffff;
+    font-size: 22px;
+}
+
+@media(min-width: 601px){
     header {
-        padding: 1px 60px;
+        padding: 1px 58px;
         justify-content: space-between;
         align-items: center;
     }
@@ -183,15 +198,15 @@ footer nav a {
     }
 
     .titulo {
-        font-size: 80px;
+        font-size: 75px;
     }
 
     nav ul {
         justify-content: flex-end;
     }
     nav a{
-        font-size:35px;
-        padding: 25px;
+        font-size:32px;
+        padding: 20px;
     }
 
     main {
@@ -278,7 +293,8 @@ footer nav a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 9px;
+        padding: 8px;
+        font-size: 22px;
     }
 
     footer img {
@@ -298,14 +314,21 @@ footer nav a {
         display: flex;
     }
 
-    footer nav li {
+    .footer nav li {
         margin: 0 100px;
+        font-size: 32px;
+
+    }
+
+    #footer12 nav li {
+        margin: 0 100px;
+        font-size: 32px;
+
     }
 
     footer nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 30px;
+        color: #ffff;
+        font-size: 32px;
     }
 
     .imagen3,.imagen4{
@@ -316,36 +339,9 @@ footer nav a {
         width:60%;
     }
 
-    .footer12 img {
-        width: 80%;
-        max-width: 370px;
-    }
-
-    .footer12 nav {
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer12 nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    .footer12 nav li {
-        margin: 0 150px;
-    }
-
-    .footer12 nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 30px;
-    }
-
     .section12 {
         display: list-item;
-        font-size: 30px;
+        font-size: 50px;
         grid-template-columns: 1fr 1fr;
         grid-gap:65px;
         margin-top: 30px;
@@ -366,10 +362,20 @@ footer nav a {
         font-size: 28px;
     }
 
+    .carousel-text {
+        color: #ffffff;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 45px;
+    }
+
+    .carousel-buttons button {
+        margin: 0px 55px;
+        font-size: 32px;
+    }
+
 
 }
-
-
 
 
 .body12 {
@@ -487,4 +493,32 @@ input[type="submit"]:hover {
 
 .body123 img{
     width:75%;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item:first-child {
+    display: block;
+}
+
+.carousel-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.carousel-buttons button {
+    margin: 0 55px;
 }
